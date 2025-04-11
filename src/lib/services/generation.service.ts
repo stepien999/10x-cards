@@ -2,6 +2,7 @@ import crypto from 'crypto';
 import type { SupabaseClient } from '@supabase/supabase-js';
 import { DEFAULT_USER_ID } from '../../db/supabase.client';
 import type { FlashcardProposalDto, GenerationCreateResponseDto } from '../../types';
+import fetch from 'node-fetch';
 
 export class GenerationService {
   constructor(private readonly supabase: SupabaseClient) {}
